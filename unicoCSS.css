@@ -34,6 +34,11 @@ a {
     padding: 15px;
   }
   
+  .contacto{
+    background-color: purple;
+    color:white
+  }
+
   .palabras-header a {
     background-color: purple;
     color:white
