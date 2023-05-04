@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../index.css">
+</head>
+<body>
+
+    <header>
+        
+        <video class="video" src="https://carontestudio.com/img/f4.mp4" autoplay="true" muted="true" loop="true"></video>
+       
+    <ul class="log-in">
+        <ui>Log In</ui>&nbsp&nbsp&nbsp&nbsp <!-- eso es para poner espacios en blanco-->
+        <ui> <a href="registrate.html">Registrate</a></ui>
+    </ul>
+    <h2 class="frase-header">Bienvenidos al futuro del Crowdfunding!</h2>
+
+    <ul class="palabras-header">
+        <li><a href="#">Contacto</a></li>
+        <li><a href="creaTuProyecto.html">Create Your Project</li>
+        <li><a href="#">Who We Are</a></li>
+        <li><a href="ourVision.html">Our Vision</a></li>
+    </ul>
+</header>
+
+    <form action="enviar.php" method="post" enctype="applications/x-www-form-urlencoded">
+
+        <label for="titulo">Titulo del Proyecto:</label><br>
+        <input type="text" id="titulo" name="titulo"><br>
+        <label for="">Descripcion del Proyecto </label> <br>
+        <textarea name="textArea" id="" cols="40" rows="10" placeholder="Write your message"></textarea>
+        <br>
+        <input type="submit" value="Send">
+        <input type="reset" value="Clear">     
+        <br><br>   
+        <label for="imagen">Selecciona una imagen para tu proyecto:</label>
+        <input type="file" id="imagen" name="imagen"><br>
+        <input type="submit" value="Enviar">
+
+    </form>
+    
+    <br>
+    <a href="../index.html">Volver al Inicio</a>
+</body>
+</html>

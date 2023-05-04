@@ -5,8 +5,13 @@ a {
   }
   
   .log-in {
-    color:white
-  }
+    color:white;
+      display: flex;
+      flex-direction: row;
+      justify-content: right;
+      color:white
+    }
+  
   header {
     background-color: #080808;
     border-radius: 5px;
@@ -65,6 +70,35 @@ a {
     box-shadow: 0 5px 10px rgba(255, 255, 0, 0.5), 0 1px 2px rgba(0, 0, 0, 0.24)
 }
 
+
+/* --- Main --- */
+
+body{
+    background-color: grey
+}
+.section1 {
+  width:100%;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: auto;
+  background-color: #080808;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 5px 10px rgba(64, 32, 32, 0.5), 0 1px 2px rgba(0, 0, 0, 0.24)
+}
+article {
+  margin-bottom: 10px;
+  display: flex;  
+  flex-direction: column;
+  align-items: center;
+  margin: 5px;
+  background-color: rgba(255, 239, 87, 0.1);
+  border-radius: 5px;
+}
+
+img{
+  padding:20px
+}
   h5{
     color:white
   }
@@ -86,12 +120,33 @@ a {
     border-radius:5px;
     border: 1px solid indigo
 }
+article h4{
+  text-decoration: none;
+  text-align: center;
+  color:white
+}
+b{
+  color:white
+}
 
+.cajaArticulo01{
+  list-style: none;
+}
 
-/* --- Main --- */
+.description-proyect {
+  word-wrap: break-word;
+}
 
-body{
-    background-color: grey
+.titulo-premios{
+  margin: 50px
+}
+
+.premios{
+  margin-bottom: 30px
+}
+
+.iconos {
+  font-size:2rem;
 }
 .contenedorGrande {
     border: 2px solid indigo;
@@ -158,6 +213,22 @@ footer {
         display:flex;
         flex-direction: column;
     }
+    .section1{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: auto;
+      justify-items: center;
+      }
+
+      article{
+        max-width: 80%;
+      }
+    
+      .description-proyect {
+        word-wrap: normal;
+      }
+    
+
 .primerContenedor{
         display:flex;
         flex-direction: column;
