@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="../unicoCSS.css">
 </head>
 <body>
 
     <header>
-       <a href="../index.html">Inicio</a>&nbsp&nbsp&nbsp&nbsp
+       <a href="../index.html" class="inicio">Inicio</a>&nbsp&nbsp&nbsp&nbsp
     <ul class="log-in">
         <ui>Log In</ui>&nbsp&nbsp&nbsp&nbsp <!-- eso es para poner espacios en blanco-->
         <ui> <a href="registrate.html">Registrate</a></ui>
@@ -34,12 +34,14 @@
         <input type="text" id="email" name="email"><br><br>
         Date of Birth <input type="date">
         <h4>Donde nos conociste?</h4>
-        <input type="radio" id="twitter" name="twitter" value="twitter">
+        <input type="radio" id="twitter" name="conociste" value="twitter">
         <label for="twitter">Twitter</label><br>
-        <input type="radio" id="linkedin" name="linkedin" value="linkedin">
+        <input type="radio" id="linkedin" name="conociste" value="linkedin">
         <label for="twitter">LinkedIn</label><br>
-        <input type="radio" id="google" name="google" value="google">
+        <input type="radio" id="google" name="conociste" value="google">
         <label for="twitter">Google</label> <br><br>
+        <button type="submit">Enviar</button>
+        <button type="reset">Reset</button>
     </form>
     
     <br>
