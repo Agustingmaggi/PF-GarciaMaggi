@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GFT! Crear Proyecto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/1ebc81000b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../public/unicoCSS.css">
+    <meta name="description" content="Help the World es tu manera mas practica para aportar tu granito de arena al mundo y a las personas que mas lo necesitan">
+   <meta name="keywords"  content="Crowdfunding, ayuda, ayudar, donaciones, donar, cambio climatico">
+  </head>
+<body>
+
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Go Fund them!</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/ourVision.html">Nuestra Visión</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/creaTuProyecto.html">Crea tu Proyecto</a>
+                  </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Ingresa</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/registrate.html">Registrate</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+</header>
+
+    <form action="enviar.php" method="post" enctype="applications/x-www-form-urlencoded">
+
+        <label for="titulo">Titulo del Proyecto:</label><br>
+        <input type="text" id="titulo" name="titulo"><br>
+        <label for="">Descripcion del Proyecto </label> <br>
+        <textarea name="textArea" id="" cols="40" rows="10" placeholder="Write your message"></textarea>
+        <br>
+        <input type="submit" value="Send">
+        <input type="reset" value="Clear">     
+        <br><br>   
+        <label for="imagen">Selecciona una imagen para tu proyecto:</label>
+        <input type="file" id="imagen" name="imagen"><br>
+        <input type="submit" value="Enviar">
+
+    </form>
+
+    <footer>
+      <h4>Donde encontrarnos</h4>
+      <h6> Calle Falsa 123, CABA </h6>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-pinterest"></i>
+      <i class="fa-solid fa-map"></i>
+      
+
+  </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  </body>
+</html>
