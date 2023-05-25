@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap');
 *{
   padding:0;
   margin:0;
   box-sizing: border-box;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 $color-footer: #2F0743;
@@ -157,6 +159,7 @@ img {
   &:hover {
     color: $violetColor;
   }
+  font-family: 'Nunito Sans', sans-serif; 
 }
 
 .div-medalla {
