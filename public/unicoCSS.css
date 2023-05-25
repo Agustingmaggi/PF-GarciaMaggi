@@ -95,7 +95,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 25%);
   grid-template-rows: auto;
-  background-color: #373c41;
+  background-color: rgba(138, 43, 226, 0.1);
   border-radius: 10px;
   margin-bottom: 30px;
   box-shadow: 0 5px 10px rgba(64, 32, 32, 0.5), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -114,6 +114,7 @@ body {
   color: #f4f4f4;
   text-align: center;
   padding-top: 15px;
+  padding-bottom: 10px;
   border-bottom: 1px solid #f4f4f4;
 }
 .title:hover {
@@ -126,22 +127,20 @@ img {
 
 .cajaArticulo01 {
   list-style: none;
+  text-align: center;
+  height: 150px;
 }
 
 .description-proyect {
-  word-wrap: break-word;
-  padding: 20px;
-}
-
-b {
   color: #f4f4f4;
+  padding: 10px;
 }
 
 .titulo-premios {
   text-align: center;
   font-size: 1.2rem;
   color: #f4f4f4;
-  margin-top: 1rem;
+  margin-top: 4rem;
   font-size: 40px;
   margin-bottom: 40px;
 }
@@ -151,23 +150,16 @@ b {
 
 .div-medalla {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-}
-
-.medalla {
-  display: flex;
-  align-items: left;
-  justify-content: left;
-  font-size: 1.5rem;
-  margin-right: 0.5rem;
-  margin: 20px;
-  font-size: 50px;
-  animation: bounce 1s infinite alternate;
+  color: #f4f4f4;
+  margin-bottom: 20px;
 }
 
 .fa-medal {
   color: #f4f4f4;
+  animation: bounce 1s infinite alternate;
 }
 .fa-medal:hover {
   color: #8a2be2;
@@ -181,10 +173,21 @@ b {
     transform: translateY(-10px);
   }
 }
+.title-medal-description {
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
 .medal-description {
-  display: inline-block;
   color: #f4f4f4;
   font-size: 1rem;
+  margin-bottom: 90px;
+  text-align: center;
+  margin-left: 200px;
+  margin-right: 200px;
+  text-align: justify;
 }
 
 h5 {
@@ -279,6 +282,9 @@ footer {
   padding-top: 30px;
   padding-bottom: 20px;
 }
+footer:hover {
+  color: #222222;
+}
 
 .site-footer {
   position: fixed;
@@ -293,6 +299,9 @@ i {
   margin-right: 0.5rem;
   margin: 20px;
   font-size: 50px;
+}
+i:hover {
+  color: #222222;
 }
 
 .inicio {
@@ -363,6 +372,11 @@ form button[type=reset] {
   }
   .description-proyect {
     word-wrap: normal;
+  }
+  .medal-description {
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: justify;
   }
   .primerContenedor {
     border: 1px solid;

@@ -110,7 +110,7 @@ body{
   display: grid;
   grid-template-columns: repeat(3, 25%);
   grid-template-rows: auto;
-  background-color: $secondary-color;
+  background-color: rgba($violetColor, 0.1);
   border-radius: 10px;
   margin-bottom: 30px;
   box-shadow: 0 5px 10px rgba(64, 32, 32, 0.5), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -129,6 +129,7 @@ body{
   color:$lightColor;
   text-align: center;
   padding-top: 15px;
+  padding-bottom: 10px;
   border-bottom: 1px solid $lightColor;
   &:hover {
     color: $violetColor;
@@ -141,22 +142,20 @@ img {
 
 .cajaArticulo01{
   list-style: none;
+  text-align: center;
+  height: 150px;
 }
 
 .description-proyect {
-  word-wrap: break-word;
-  padding:20px;
-}
-
-b{
-  color:$lightColor
+  color:$lightColor;
+  padding: 10px
 }
 
 .titulo-premios {
   text-align: center;
   font-size: 1.2rem;
   color: $lightColor;
-  margin-top: 1rem;
+  margin-top: 4rem;
   font-size: 40px;
   margin-bottom: 40px;
   &:hover {
@@ -164,29 +163,23 @@ b{
   }
 }
 
-.div-medalla{
+.div-medalla {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-
+  color: $lightColor;
+  margin-bottom: 20px;
 }
 
-.medalla {
-  display: flex;
-  align-items: left;
-  justify-content: left;
-  font-size: 1.5rem;
-  margin-right: 0.5rem;
-  margin:20px;
-  font-size: 50px;
-  animation: bounce $animation-duration infinite alternate;
-}
-.fa-medal{
-  color:$lightColor;
+.fa-medal {
+  color: $lightColor;
   &:hover {
     color: $violetColor;
   }
+  animation: bounce $animation-duration infinite alternate;
 }
+
 @keyframes bounce {
   from {
     transform: translateY(0);
@@ -194,11 +187,23 @@ b{
   to {
     transform: translateY(-10px);
   }
-  }
+}
+
+.title-medal-description {
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
 .medal-description {
-  display: inline-block;
   color: $lightColor;
   font-size: 1rem;
+  margin-bottom: 90px;
+  text-align: center;
+  margin-left: 200px;
+  margin-right: 200px;
+  text-align: justify;
 }
 
   h5{
@@ -294,6 +299,9 @@ b{
 }
 footer {
   background-color: $violetColor;
+  &:hover {
+    color: $darkColor;
+  }
   border: black;
   border-color: black;
   color: $lightColor;
@@ -312,6 +320,9 @@ i{
   display: inline-block;
   font-size: 1.5rem;
   color: $lightColor;
+  &:hover {
+    color: $darkColor;
+  }
   margin-right: 0.5rem;
   margin:20px;
 font-size: 50px;
@@ -338,6 +349,12 @@ font-size: 50px;
     
       .description-proyect {
         word-wrap: normal;
+      }
+
+      .medal-description {
+        margin-left: 20px;
+  margin-right: 20px;
+  text-align: justify;
       }
    
 
