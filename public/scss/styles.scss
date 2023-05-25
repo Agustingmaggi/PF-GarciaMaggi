@@ -108,7 +108,8 @@ body{
 
 .articuloo{
   border-radius: 2%;
-  transition: width 20s, background-color 0.1s; /* Agregamos transición para suavizar el efecto */
+  width: 100%;
+  transition: width 0.5s, background-color 0.1s; /* Agregamos transición para suavizar el efecto */
 
   &:hover {
     width: 110%; /* Ancho al 100% cuando se coloca el mouse sobre la sección */
