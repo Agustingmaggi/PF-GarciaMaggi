@@ -72,10 +72,12 @@ header nav .navbar-nav .nav-item a {
     border: none;
     background-color: transparent;
   }
+
+ 
   .input-barra {
     border-radius: 8px;
     height: 30px;
-  }
+    }
   
   h1{
     color:white;
@@ -245,6 +247,44 @@ font-size: 50px;
 }
 
 
+/* EMPIEZA CODIGO PARA EL HTML DE CREA TU PROYECTO*/
+
+
+.boton-formulario-creatuproycto{
+  background-color: $violetColor;
+  transition: background-color 0.3s ease;
+  &:hover {
+    background-color: #45a049;
+  }
+  border-radius: 3px
+}
+
+.textarea{
+  border-radius: 4px
+}
+
+/* TERMINA CODIGO PARA EL HTML DE CREA TU PROYECTO*/
+
+
+/* EMPIEZA CODIGO PARA EL HTML DE INGRESA*/
+
+.contraseña{
+  border-radius: 4px;
+  border: none;
+  margin-bottom: 20px
+}
+
+.iniciar-sesion{
+  background-color: $violetColor;
+  transition: background-color 0.3s ease;
+  &:hover {
+    background-color: #45a049;
+  }
+  border-radius: 3px;
+  color:$lightColor
+}
+
+/* EMPIEZA CODIGO PARA EL HTML DE INGRESA*/
 
 @import "_parques-nacionales";
 

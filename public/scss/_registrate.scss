@@ -21,8 +21,6 @@ form {
       margin-bottom: 20px;
       border: 1px solid #ccc;
       border-radius: 5px;
-      
-      
       &:focus {
         outline: none;
         border-color: #5E8AE6;
@@ -37,7 +35,7 @@ form {
     
     button[type="submit"] {
         @extend .button;
-        background-color: #007bff;
+        background-color: $violetColor;
         color: #fff;
       }
       
@@ -49,17 +47,16 @@ form {
         font-size: 1rem;
         text-align: center;
         text-decoration: none;
-        cursor: pointer;
         transition: background-color 0.3s ease;
         
         &:hover {
-          background-color: #0056b3;
+          background-color: #45a049;
         }
       }
 
       button[type="reset"] {
         @extend .button;
-        background-color: #dc3545;
+        background-color: $violetColor;
         color: #fff;
       }
 
