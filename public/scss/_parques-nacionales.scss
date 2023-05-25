@@ -4,15 +4,34 @@
     box-sizing: border-box;
   }
 
-.imagen {
-    background-image:url(images/bosque.jpeg) ;
+header{
+  border-bottom: 1px solid $lightColor;
+}
 
+.titulo-parques{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+  .carousel-inner .carousel-item img {
+    width: 80%;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+
+/*.imagen {
+   // background-image:url(images/bosque.jpeg);
     background-size: cover;
     background-position: center;
     border-radius:5px;
     text-align: center;
     height: 50vh
  }
+ */
  .recaudado {
      height: 30%;
      border-radius: 10px;
@@ -99,7 +118,7 @@
 
 
   .imagen {
-    background-image: url(images/bosque.jpeg);
+   // background-image: url(images/bosque.jpeg);
     margin: 5px;
     background-size: cover;
     background-position: center;
