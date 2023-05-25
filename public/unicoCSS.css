@@ -104,13 +104,37 @@ body {
   padding: 30px;
   margin: 0 auto;
 }
-.section1 article {
-  margin: 5px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #f4f4f4;
-  border-radius: 5px;
+
+.articuloo {
+  border: 1px solid #f4f4f4;
+  border-radius: 2%;
+}
+
+.title {
+  color: #f4f4f4;
+  text-align: center;
+  padding-top: 15px;
+  border-bottom: 1px solid #f4f4f4;
+}
+.title:hover {
+  color: #8a2be2;
+}
+
+img {
+  width: 100%;
+}
+
+.cajaArticulo01 {
+  list-style: none;
+}
+
+.description-proyect {
+  word-wrap: break-word;
+  padding: 20px;
+}
+
+b {
+  color: #f4f4f4;
 }
 
 .titulo-premios {
@@ -184,28 +208,6 @@ h5 {
   border-radius: 5px;
   border: 1px solid indigo;
   text-align: center;
-}
-
-.title {
-  color: #222222;
-}
-
-b {
-  color: #222222;
-}
-
-.articuloo img {
-  max-width: 100%;
-  height: auto;
-}
-
-.cajaArticulo01 {
-  list-style: none;
-}
-
-.description-proyect {
-  word-wrap: break-word;
-  padding: 20px;
 }
 
 .iconos {

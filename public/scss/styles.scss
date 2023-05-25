@@ -20,6 +20,7 @@ $animation-duration: 1s;
   width: 100% !important;
   height: 400px;
   margin-bottom: 70px;
+
  a{
   text-decoration: none;
   color: white;
@@ -117,25 +118,38 @@ body{
   gap: 60px;
   padding: 30px;
   margin:0 auto;
+}
 
+.articuloo{
+  border: 1px solid $lightColor;
+  border-radius: 2%;
+}
 
-          @mixin article-styles($margin, $background-color, $border-radius) {
-            margin: $margin;
-            display: flex;  
-            flex-direction: column;
-            align-items: center;
-            background-color: $background-color;
-            border-radius: $border-radius;
-          }
-        
-          
-          article {
-            @include article-styles(5px, $lightColor, 5px);
-          
-           
+.title {
+  color:$lightColor;
+  text-align: center;
+  padding-top: 15px;
+  border-bottom: 1px solid $lightColor;
+  &:hover {
+    color: $violetColor;
+  }
+}
 
-           
-    }
+img {
+  width: 100%;
+}
+
+.cajaArticulo01{
+  list-style: none;
+}
+
+.description-proyect {
+  word-wrap: break-word;
+  padding:20px;
+}
+
+b{
+  color:$lightColor
 }
 
 .titulo-premios {
@@ -210,27 +224,6 @@ body{
             text-align: center;
             }
           
-}
-.title {
-  color:$darkColor;
-}
-
-b{
-  color:$darkColor
-}
-
-.articuloo img {
-  max-width: 100%;
-  height: auto;
-}
-
-.cajaArticulo01{
-  list-style: none;
-}
-
-.description-proyect {
-  word-wrap: break-word;
-  padding:20px
 }
 
 .iconos {
