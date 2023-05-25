@@ -19,7 +19,7 @@ $animation-duration: 1s;
   background-size: cover;
   width: 100% !important;
   height: 400px;
-  margin-bottom: 25px;
+  margin-bottom: 70px;
  a{
   text-decoration: none;
   color: white;
@@ -100,19 +100,23 @@ $animation-duration: 1s;
 /* --- Main --- */
 
 body{
-    background-color: grey;
+    background-color: $darkColor;
     margin:0;
     padding:0
 }
 .section1 {
-  width:100%;
+  width:80%;
   display: grid;
-  grid-template-columns: repeat(3, 33%);
+  grid-template-columns: repeat(3, 25%);
   grid-template-rows: auto;
-  background-color: #080808;
+  background-color: $secondary-color;
   border-radius: 10px;
   margin-bottom: 30px;
   box-shadow: 0 5px 10px rgba(64, 32, 32, 0.5), 0 1px 2px rgba(0, 0, 0, 0.24);
+  justify-content: center;
+  gap: 60px;
+  padding: 30px;
+  margin:0 auto;
 
 
           @mixin article-styles($margin, $background-color, $border-radius) {
@@ -123,26 +127,12 @@ body{
             background-color: $background-color;
             border-radius: $border-radius;
           }
-          
-          @mixin article-title-hover() {
-            &:hover {
-              animation: shake 0.5s;
-            
-              @keyframes shake {
-                0% { transform: translate(0, 0); }
-                10%, 30%, 50%, 70%, 90% { transform: translate(-5px, 0); }
-                20%, 40%, 60%, 80% { transform: translate(5px, 0); }
-                100% { transform: translate(0, 0); }
-              }
-            }
-          }
+        
           
           article {
-            @include article-styles(5px, rgba(255, 239, 87, 0.1), 5px);
+            @include article-styles(5px, $lightColor, 5px);
           
-            .title {
-              @include article-title-hover();
-            }
+           
 
            
     }
@@ -151,10 +141,13 @@ body{
 .titulo-premios {
   text-align: center;
   font-size: 1.2rem;
-  color: $primary-color;
+  color: $lightColor;
   margin-top: 1rem;
   font-size: 40px;
   margin-bottom: 40px;
+  &:hover {
+    color: $violetColor;
+  }
 }
 
 .div-medalla{
@@ -167,13 +160,18 @@ body{
 .medalla {
   display: flex;
   align-items: left;
-    justify-content: left;
+  justify-content: left;
   font-size: 1.5rem;
-  color: $secondary-color;
   margin-right: 0.5rem;
   margin:20px;
-font-size: 50px;
-animation: bounce $animation-duration infinite alternate;
+  font-size: 50px;
+  animation: bounce $animation-duration infinite alternate;
+}
+.fa-medal{
+  color:$lightColor;
+  &:hover {
+    color: $violetColor;
+  }
 }
 @keyframes bounce {
   from {
@@ -185,7 +183,7 @@ animation: bounce $animation-duration infinite alternate;
   }
 .medal-description {
   display: inline-block;
-  color: $secondary-color;
+  color: $lightColor;
   font-size: 1rem;
 }
 
@@ -214,11 +212,16 @@ animation: bounce $animation-duration infinite alternate;
           
 }
 .title {
-  color:white;
+  color:$darkColor;
 }
 
 b{
-  color:white
+  color:$darkColor
+}
+
+.articuloo img {
+  max-width: 100%;
+  height: auto;
 }
 
 .cajaArticulo01{
@@ -297,11 +300,14 @@ b{
             }
 }
 footer {
-  background-color: $color-footer;
+  background-color: $violetColor;
   border: black;
   border-color: black;
-  color: $color-elementos-footer;
-  margin-top: 70px
+  color: $lightColor;
+  margin-top: 70px;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 20px;
 }
 .site-footer{
   position: fixed;
@@ -312,7 +318,7 @@ footer {
 i{
   display: inline-block;
   font-size: 1.5rem;
-  color: $secondary-color;
+  color: $lightColor;
   margin-right: 0.5rem;
   margin:20px;
 font-size: 50px;
