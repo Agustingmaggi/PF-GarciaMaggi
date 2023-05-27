@@ -135,7 +135,7 @@ img {
 
 .description-proyect {
   color: $lightColor;
-  padding: 10px
+  padding: 10px;
 }
 
 .titulo-premios {
@@ -322,11 +322,11 @@ i {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: auto;
     justify-items: center;
-    width: 40%;
+    width: 50%;
   }
 
   .description-proyect {
-    word-wrap: normal;
+    padding: 5px;
   }
 
   .medal-description {
