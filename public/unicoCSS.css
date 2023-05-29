@@ -102,9 +102,8 @@ body {
 img {
   width: 100%;
   display: block;
-  height: auto;
   border-radius: 2%;
-  object-fit: cover;
+  height: auto;
 }
 
 .cajaArticulo01 {
@@ -161,6 +160,7 @@ img {
   font-size: 1.2rem;
   text-align: center;
   margin-bottom: 10px;
+  padding: 10px;
 }
 
 .medal-description {
@@ -195,12 +195,6 @@ footer:hover {
   color: #222222;
 }
 
-.site-footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-
 i {
   display: inline-block;
   font-size: 1.5rem;
@@ -223,12 +217,12 @@ i:hover {
   margin: 10px;
 }
 
-.boton-formulario-creatuproycto {
+.boton-formulario-creatuproyecto {
   background-color: #8a2be2;
   transition: background-color 0.3s ease;
   border-radius: 3px;
 }
-.boton-formulario-creatuproycto:hover {
+.boton-formulario-creatuproyecto:hover {
   background-color: #45a049;
 }
 
@@ -240,10 +234,10 @@ i:hover {
 /* TERMINA CODIGO PARA EL HTML DE CREA TU PROYECTO*/
 /* EMPIEZA CODIGO PARA EL HTML DE INGRESA*/
 .formulario-iniciar-sesion {
-  margin: 10px;
+  margin: 40px;
 }
 
-.titutlo-iniciar-sesion {
+.titulo-iniciar-sesion {
   color: white;
   text-align: center;
 }
@@ -265,6 +259,11 @@ i:hover {
   background-color: #45a049;
 }
 
+@media (max-width: 500px) {
+  .formulario-iniciar-sesion {
+    margin-top: 70px;
+  }
+}
 /* TERMINA CODIGO PARA EL HTML DE INGRESA*/
 header {
   border-bottom: 1px solid #f4f4f4;
@@ -282,6 +281,7 @@ header {
   height: 500px;
   margin-left: auto;
   margin-right: auto;
+  object-fit: contain;
 }
 
 .recaudado {
@@ -399,6 +399,12 @@ header {
     display: none !important;
   }
 }
+@media screen and (max-width: 300px) {
+  .contenedorGrande {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .inicio {
   color: ivory;
 }
@@ -480,24 +486,24 @@ form button[type=reset] {
     padding: 5px;
   }
   .medal-description {
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: auto;
+    margin-right: auto;
     text-align: justify;
+    padding: 10px;
   }
 }
 @media (max-width: 500px) {
-  .site-footer {
-    padding: 5px;
-    max-height: 60px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-  .titulo-footer {
-    display: none;
-  }
   i {
     font-size: 1.4rem;
+  }
+}
+@media (max-width: 500px) {
+  .div-medalla {
+    display: flex;
+    flex-direction: column;
+  }
+  .titulo-premios {
+    font-size: 30px;
   }
 }
 

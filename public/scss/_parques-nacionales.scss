@@ -14,8 +14,9 @@ header {
   height: 500px;
   margin-left: auto;
   margin-right: auto;
-
+  object-fit: contain;
 }
+
 .recaudado {
   height: 30%;
   border-radius: 10px;
@@ -148,4 +149,13 @@ header {
   .item3 {
     display: none !important;
   }
+}
+
+@media screen and (max-width: 300px) {
+
+  .contenedorGrande{
+    display: flex;
+    flex-direction: column;
+  }
+
 }
